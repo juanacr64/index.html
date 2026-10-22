@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Conciertos de Averly Morillo</title>
+    <style>
+        /* Estilos base */
+        :root {
+            --bg-oscuro: #001f24;
+            --luz-texto: #ffffff;
+            --color-acento: #00bcd4;
+            --familia-fuentes: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--familia-fuentes);
+            background-color: var(--bg-oscuro);
+            color: var(--luz-texto);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Regla con !important (Punto 2 de la tarea) */
+        .texto-principal {
+            color: white !important;
+        }
+
+        /* Regla específica para párrafo body p (Punto 3 y 4 de la tarea) */
+        body p {
+            color: green;
+        }
+
+        /* Regla de color para etiquetas p generales */
+        p {
+            color: blue;
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        /* Contenido del Blog */
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contenedor-imagen {
+            margin: 20px 0;
+        }
+
+        .contenedor-imagen img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        /* 2. REESTRUCTURACIÓN RESPONSIVE (Media Query) */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* 3. PIE DE PÁGINA */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Regla al final del archivo CSS (Punto 1 de la tarea) */
+        body {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="texto-principal">Blog de Conciertos de Averly Morillo</h1>
+    </header>
+
+    <main>
+        <p>Bienvenido al blog de conciertos y eventos en vivo.</p>
+        
+        <div class="contenedor-imagen">
+            <img src="https://orgullodominicano.org/wp-content/uploads/2025/11/image-459.png">
+        </div>
+
+
+    <footer>
+        <p style="color: white;">Elaborado por: <strong>Juana Jamileth Cruz Aguirre</strong></p>
+    </footer>
+
+</body>
+</html>
